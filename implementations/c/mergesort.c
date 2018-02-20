@@ -63,11 +63,7 @@ int main(int argc, char **argv)
         DATATYPE * array = (DATATYPE *) malloc(sizeof (DATATYPE )*n); 
         
         fill(array,n); 
-        merge_sort(array,n);
-        for(j=0;j<n;j++)
-                 printf("%d ",array[j]) ; 
-    
-        
+        merge_sort(array,n);      
         free(array);
     }
     
