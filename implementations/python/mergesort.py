@@ -44,6 +44,8 @@ def random(x, maxi=1000):
 if __name__ == '__main__':
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 100 # taille de notre tableau
     Niters = int(sys.argv[2]) if len (sys.argv) >2 else  1  # nombre d'iterations qu'on veut faire ( 1 par defeault)
-    l=[random(i) for i in range(N)]
-    merge_sort(l)
+    
+    for i in range(Niters): 
+        l=[random(i) for i in range(N)]
+        merge_sort(l)
     
