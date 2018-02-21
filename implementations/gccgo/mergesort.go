@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"math"
 	"strconv"
 )
@@ -10,12 +11,14 @@ import (
 // the sorted array   [0 0 0 1 10 10 26 27 51 194 199 230 371 542 605 704 704 756 809 947]
 
 func main() {
+
 	var n = 100
 	var niters = 1
 	flag.Parse()
 	if flag.NArg() > 0 {
 		n, _ = strconv.Atoi(flag.Arg(0))
 		if flag.NArg() > 1 {
+
 			niters, _ = strconv.Atoi(flag.Arg(1))
 		}
 	}
@@ -26,9 +29,9 @@ func main() {
 		for i := 0; i < n; i++ {
 			a[i] = customRandom(i)
 		}
-
+		fmt.Println(a)
 		mergeSort(a, s)
-
+		fmt.Println(a)
 	}
 }
 

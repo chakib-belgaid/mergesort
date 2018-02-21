@@ -26,7 +26,9 @@ fn main() {
 		for i in 0..n {
 			a.push( custom_random(i as i32)); 
 		}
+		println!("{:?}",a);
 		merge_sort_rec(a.as_mut_slice());
+		println!("{:?}",a);
 	}
 }
 

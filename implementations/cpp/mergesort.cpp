@@ -56,6 +56,15 @@ void merge(DATATYPE a[], int left_low, int left_high, int right_low, int right_h
         a[left_low++] = temp[i];
 }
 
+void print(DATATYPE * array,int size)
+{
+    for (size_t i = 0; i < size; i++)
+    {
+        std::cout<<array[i]<<" "; 
+    }
+    std::cout<<std::endl ;
+}
+
 //first 20 instances :[0 0 1 26 27 10 199 194 10 605 704 0 230 809 51 947 756 371 542 704]
 // the sorted array   [0 0 0 1 10 10 26 27 51 194 199 230 371 542 605 704 704 756 809 947]
 
@@ -71,6 +80,8 @@ int main(int argc, char **argv)
         {
             a[i] = customRandom(i);
         }
+        print(a,n);
         mergeSort(a, n);
+        print(a,n);
     }
 }

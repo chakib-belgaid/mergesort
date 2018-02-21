@@ -53,6 +53,14 @@ void fill(DATATYPE * array, int size )
    }
 }
 
+void print(DATATYPE * array,int size)
+{
+    for (size_t i = 0; i < size; i++)
+    {
+        printf("%d ",array[i]); 
+    }
+    printf("\n");
+}
 int main(int argc, char **argv)
 {
     int n = (argc > 1) ? atoi(argv[1]) : 100;
@@ -63,7 +71,9 @@ int main(int argc, char **argv)
         DATATYPE * array = (DATATYPE *) malloc(sizeof (DATATYPE )*n); 
         
         fill(array,n); 
+       // print(array,n);
         merge_sort(array,n);      
+       // print(array,n);
         free(array);
     }
     

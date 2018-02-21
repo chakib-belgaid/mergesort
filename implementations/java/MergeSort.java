@@ -16,11 +16,21 @@ public class MergeSort {
 				l.add(customRandom(i));
 
 			}
-
+			print(l);
 			mergeSort(l);
-
+			print(l);
 		}
 
+	}
+
+	public static void print (List<Integer> l ) 
+	{
+		for (int each : l) {
+			System.out.print(each+" "); 
+			
+		}
+		System.out.println(""); 
+		
 	}
 
 	public static int customRandom(int n) // pseudo random number generator 

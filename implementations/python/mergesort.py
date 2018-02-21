@@ -40,6 +40,10 @@ def random(x, maxi=1000):
    return (int(x*x*x* cos(x)*cos(x) ))  % maxi 
 
 
+def printi(l):
+    for i in l : 
+        print(str(i)+" " ,end="")
+    print("\n")
 
 if __name__ == '__main__':
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 100 # taille de notre tableau
@@ -47,5 +51,6 @@ if __name__ == '__main__':
     
     for i in range(Niters): 
         l=[random(i) for i in range(N)]
-        merge_sort(l)
-    
+        printi(l)
+        l=merge_sort(l)
+        printi(l)

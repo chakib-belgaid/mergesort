@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"math"
 	"strconv"
 )
@@ -26,8 +27,9 @@ func main() {
 		for i := 0; i < n; i++ {
 			a[i] = customRandom(i)
 		}
-
+		fmt.Println(a)
 		mergeSort(a, s)
+		fmt.Println(a)
 
 	}
 }

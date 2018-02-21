@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  rust:
+    image: rust
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
