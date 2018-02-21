@@ -8,28 +8,28 @@
 typedef int DATATYPE;
 
 void merge(DATATYPE a[], int left_low, int left_high, int right_low, int right_high);
-void sortMerge(DATATYPE a[], int length);
-void sortMerge(DATATYPE a[], int low, int high);
+void mergeSort(DATATYPE a[], int length);
+void mergeSort(DATATYPE a[], int low, int high);
 
 DATATYPE customRandom(int n) // pseudo random number generator
 {
     return (DATATYPE)((int)floor(n * n * n * cos(n) * cos(n)) % MAXI);
 }
 
-void sortMerge(DATATYPE a[], int length)
+void mergeSort(DATATYPE a[], int length)
 {
-    sortMerge(a, 0, length - 1);
+    mergeSort(a, 0, length - 1);
 }
 
-void sortMerge(DATATYPE a[], int low, int high)
+void mergeSort(DATATYPE a[], int low, int high)
 {
     if (low >= high) //Base case: 1 value to sort->sorted
         return;      //(0 possible only on initial call)
     else
     {
         int mid = (low + high) / 2;        //Approximate midpoint*
-        sortMerge(a, low, mid);           //Sort low to mid part of array
-        sortMerge(a, mid + 1, high);      //Sort mid+1 to high part of array
+        mergeSort(a, low, mid);           //Sort low to mid part of array
+        mergeSort(a, mid + 1, high);      //Sort mid+1 to high part of array
         merge(a, low, mid, mid + 1, high); //Merge sorted subparts of array
     }
 }
@@ -71,6 +71,6 @@ int main(int argc, char **argv)
         {
             a[i] = customRandom(i);
         }
-        sortMerge(a, n);
+        mergeSort(a, n);
     }
 }
