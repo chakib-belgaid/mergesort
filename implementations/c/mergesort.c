@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define MAXI 1000
+#define MAXI 1000000
+//2147483647
 
 typedef  int DATATYPE ;// incase if we want to change it for later testes 
 

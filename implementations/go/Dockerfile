@@ -9,7 +9,6 @@ RUN go-wrapper install    # "go install -v ./..."
 #final stage
 FROM chakibmed/powerapi:latest
 COPY --from=builder /go/bin/app /app
-ENTRYPOINT ["./app"]
-#ENTRYPOINT [ "./analyse.sh","./pidigits" ]
+ENTRYPOINT [ "./analyse.sh","./app" ]
 CMD [ "20" ]
 

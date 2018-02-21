@@ -16,9 +16,9 @@ public class MergeSort {
 				l.add(customRandom(i));
 
 			}
-			print(l);
+		//	print(l);
 			mergeSort(l);
-			print(l);
+		//	print(l);
 		}
 
 	}
@@ -35,7 +35,7 @@ public class MergeSort {
 
 	public static int customRandom(int n) // pseudo random number generator 
 	{
-		int MAXI = 1000;
+		int MAXI = 1000000;//2147483647
 		return ((int) (n * n * n * Math.cos(n) * Math.cos(n)) % MAXI);
 	}
 

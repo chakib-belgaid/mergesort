@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -27,16 +26,16 @@ func main() {
 		for i := 0; i < n; i++ {
 			a[i] = customRandom(i)
 		}
-		fmt.Println(a)
+		//fmt.Println(a)
 		mergeSort(a, s)
-		fmt.Println(a)
+		//fmt.Println(a)
 
 	}
 }
 
 func customRandom(n int) int {
 	x := float64(n)
-	MAXI := 1000
+	MAXI := 1000000 //2147483647
 
 	return int(x*x*x*math.Cos(x)*math.Cos(x)) % MAXI
 }

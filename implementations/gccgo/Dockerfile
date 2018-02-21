@@ -5,6 +5,5 @@ RUN apt-get -y update && apt-get -y install gccgo
 ADD mergesort.go .
 RUN gccgo -g mergesort.go  -o mergesort
 
-ENTRYPOINT ["./mergesort"]
-#ENTRYPOINT ["./analyse.sh","mergesort"]
+ENTRYPOINT ["./analyse.sh","./mergesort"]
 CMD ["20"]

@@ -3,7 +3,8 @@
 #include <cstdlib>
 #include <iostream>
 #include <cmath>
-#define MAXI 1000
+#define MAXI 1000000 
+//2147483647
 
 typedef int DATATYPE;
 
@@ -80,8 +81,8 @@ int main(int argc, char **argv)
         {
             a[i] = customRandom(i);
         }
-        print(a,n);
+        //print(a,n);
         mergeSort(a, n);
-        print(a,n);
+        //print(a,n);
     }
 }

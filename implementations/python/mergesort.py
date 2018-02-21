@@ -36,7 +36,7 @@ def merge_sort(m):
     return list(merge(left, right))
 
 
-def random(x, maxi=1000):
+def random(x, maxi=1000000):
    return (int(x*x*x* cos(x)*cos(x) ))  % maxi 
 
 
@@ -51,6 +51,6 @@ if __name__ == '__main__':
     
     for i in range(Niters): 
         l=[random(i) for i in range(N)]
-        printi(l)
+        #printi(l)
         l=merge_sort(l)
-        printi(l)
+        #printi(l)

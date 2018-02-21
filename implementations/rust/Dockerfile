@@ -9,7 +9,8 @@ RUN rustc  mergesort.rs -o mergesort
 FROM chakibmed/powerapi:latest
 COPY --from=compiler  mergesort . 
 
-ENTRYPOINT [ "./mergesort" ]
+#ENTRYPOINT [ "./mergesort" ]
 
-#ENTRYPOINT ["./analyse.sh" , "./mergesort" ]
+ENTRYPOINT ["./analyse.sh" , "./mergesort" ]
 CMD [ "20" ] 
+#//2147483647

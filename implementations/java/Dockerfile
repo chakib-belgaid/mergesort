@@ -6,6 +6,6 @@ RUN javac MergeSort.java
 FROM chakibmed/powerapi:latest
 COPY --from=compiler  "*.class" ./ 
 
-ENTRYPOINT ["java", "MergeSort" ]
+ENTRYPOINT ["./analyse.sh","java", "MergeSort" ]
 #ENTRYPOINT ["./analysava", "pidigits" ]
 CMD [ "20" ] 

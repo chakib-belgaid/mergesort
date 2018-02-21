@@ -4,7 +4,7 @@
 use std::f32;
 
 fn custom_random(n: i32) -> i32 {
-	const  MAXI:i32 = 1000;
+	const  MAXI:i32 =1000000;// 2147483647 ; //std::i32::MAX;
 	let x :f32 = n as f32;
 	return ((x * x * x *x.cos() * x.cos() )as i32 )  % MAXI;
 }
@@ -26,9 +26,9 @@ fn main() {
 		for i in 0..n {
 			a.push( custom_random(i as i32)); 
 		}
-		println!("{:?}",a);
+		//println!("{:?}",a);
 		merge_sort_rec(a.as_mut_slice());
-		println!("{:?}",a);
+		//println!("{:?}",a);
 	}
 }
 
