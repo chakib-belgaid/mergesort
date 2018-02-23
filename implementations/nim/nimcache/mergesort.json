@@ -1,0 +1,26 @@
+{"compile":[
+["/home/sprirals/mergesort/implementations/nim/nimcache/mergesort.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/mergesort.o /home/sprirals/mergesort/implementations/nim/nimcache/mergesort.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_system.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_system.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_system.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_math.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_math.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_math.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_strutils.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_strutils.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_strutils.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_os.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_os.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_os.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_parseutils.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_parseutils.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_parseutils.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_algorithm.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_algorithm.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_algorithm.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_times.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_times.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_times.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_posix.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_posix.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_posix.c"],
+["/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_ospaths.c", "gcc -c  -w  -I/usr/lib/nim -o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_ospaths.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_ospaths.c"]
+],
+"link":[
+"/home/sprirals/mergesort/implementations/nim/nimcache/mergesort.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_system.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_math.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_strutils.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_os.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_parseutils.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_algorithm.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_times.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_posix.o",
+"/home/sprirals/mergesort/implementations/nim/nimcache/stdlib_ospaths.o"
+],
+"linkcmd": "gcc   -o /home/sprirals/mergesort/implementations/nim/mergesort  /home/sprirals/mergesort/implementations/nim/nimcache/mergesort.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_system.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_math.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_strutils.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_os.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_parseutils.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_algorithm.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_times.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_posix.o /home/sprirals/mergesort/implementations/nim/nimcache/stdlib_ospaths.o  -lm -lrt   -ldl"
+}
