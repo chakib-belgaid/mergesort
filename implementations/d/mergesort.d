@@ -23,7 +23,7 @@ T[] merge(T)(in T[] D1, in T[] D2)
 int customRandom(int x)
 {
     const MAXI = 1000000;
-    return to!int(x * x * x * cos(float(x)) * cos(float(x))) % MAXI;
+    return  to!int(x * x * x * cos(float(x)) * cos(float(x))) % MAXI;
 }
 
 void main(string[] args)
