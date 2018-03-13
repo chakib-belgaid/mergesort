@@ -41,9 +41,10 @@ def random(x, maxi=1000000):
 
 
 def printi(l):
+    s=""
     for i in l : 
-        print(str(i)+" " ,end="")
-    print("\n")
+        s+=str(i)+" "  
+    print("s")
 
 if __name__ == '__main__':
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 100 # taille de notre tableau
